@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-cloud-aws
-Version:        1.10.0
+Version:        1.11.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin to use EC2 and S3
 
@@ -50,6 +50,9 @@ cd %{name}-%{version}
 %{base_install_dir}/plugins/cloud-aws/*
 
 %changelog
+* Thu May 30 2013 Jared Stehler jared.stehler@gmail.com 1.11.0
+- New upstream version
+
 * Fri Dec 28 2012 Chris Schuld chris@chrisschuld.com 1.10.0
 - New upstream version
 
