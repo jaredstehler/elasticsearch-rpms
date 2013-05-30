@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-c
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The AWS Cloud plugin allows to use AWS EC2 API for the

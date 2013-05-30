@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-river-couchdb
-Version:        1.1.0
+Version:        1.2.0
 Release:        2%{?dist}
 Summary:        ElasticSearch plugin to hook into CouchDB
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-r
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The CouchDB River plugin allows to hook into

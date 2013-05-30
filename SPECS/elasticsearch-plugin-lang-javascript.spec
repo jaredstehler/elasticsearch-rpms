@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-lang-javascript
-Version:        1.1.0
+Version:        1.3.0
 Release:        2%{?dist}
 Summary:        ElasticSearch plugin to use Javascript for script execution
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-l
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The Groovy language plugin allows to have javascript

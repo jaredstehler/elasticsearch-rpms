@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-analysis-kuromoji
-Version:        1.1.0
+Version:        1.3.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin for Lucene kuromoji analysis module
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-a
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The Japanese (kuromoji) Analysis plugin integrates Lucene kuromoji

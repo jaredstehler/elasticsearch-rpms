@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-river-rabbitmq
-Version:        1.4.0
+Version:        1.5.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin to hook into RabbitMQ
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-r
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The RabbitMQ River plugin allows index

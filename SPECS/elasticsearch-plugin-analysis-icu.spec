@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-analysis-icu
-Version:        1.7.0
+Version:        1.9.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin for Lucene ICU
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-a
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The ICU Analysis plugin for ElasticSearch integrates Lucene ICU module

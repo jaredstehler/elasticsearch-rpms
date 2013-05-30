@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-transport-memcached
-Version:        1.2.0
+Version:        1.5.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin to use the REST interface over memcached
 
@@ -17,7 +17,7 @@ Source0:        https://download.elasticsearch.org/elasticsearch/elasticsearch-t
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19.9
+Requires:       elasticsearch >= 0.90.0
 
 %description
 The memcached transport plugin allows to use
